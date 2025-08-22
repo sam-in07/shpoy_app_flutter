@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shpoy_app/profile.dart';
 import 'package:shpoy_app/screen/splash_screen.dart';
 
 void main() {
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const SplashScreen(),
+    //  home: const SplashScreen(),
+      home: const Profile(),
     );
   }
 }
