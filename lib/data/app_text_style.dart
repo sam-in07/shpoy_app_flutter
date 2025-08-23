@@ -35,5 +35,10 @@ class AppTextstyle {
    color: Color(0xfff3f3f3),
    fontWeight: FontWeight.w300,
  );
+ static  TextStyle textStyle22orrageW300 = GoogleFonts.nunitoSans(
+   fontSize: 22 ,
+   color: Color(0xffd1610c),
+   fontWeight: FontWeight.w300,
+ );
 
 }

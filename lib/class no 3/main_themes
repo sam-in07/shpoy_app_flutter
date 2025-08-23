@@ -1,0 +1,69 @@
+Interview :
+"Context " ki ???
+context hocche widget ar porichoy
+How Android Life cycle ki ?
+widget destry kivabe kaj kore
+Isolation KI ?
+
+
+
+
+custom text feild kivabe kaj korte hoi
+
+
+
+final Widget ? prefixWidget ;
+   CustomerTextFeild({super.key, required this.controller, required this.hintText,  this.prefixWidget});
+
+ widget ba icon sobujate thakbe na oijnno "requried" hobe na .. oijnno ...."final Widget ? prefixWidget ;"  ? hobe
+ null kore dibo arki just ae
+
+main code null value expect korte parbe
+
+
+obscureText T?F
+password chara onno kothie lagbe na
+always passed lagbe
+
+ this.obscureText = false}
+   CustomerTextFeild({super.key, required this.controller,
+   required this.hintText,  this.prefixWidget,
+   this.obscureText = false});
+   mane eta hocche passs jokhon likhbo oita ".........." hoi jabe show hobe na
+
+
+
+
+onTap: () {
+                    // AlertDialog(
+                    //   title: Text("Going to "),
+                    // );
+                    _showAlertDialog(context);
+                  },
+
+void _showAlertDialog(BuildContext context) {
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: Text("Going to"),
+        content: Text("This is your custom alert dialog."),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop(); // Dismiss the dialog
+            },
+            child: Text("Cancel"),
+          ),
+          TextButton(
+            onPressed: () {
+              // You can add your custom logic here
+              Navigator.of(context).pop(); // Close the dialog
+            },
+            child: Text("OK"),
+          ),
+        ],
+      );
+    },
+  );
+}
