@@ -1,0 +1,25 @@
+ child: ListView.separated(
+              scrollDirection: Axis.horizontal,
+              itemCount: 5,
+              itemBuilder: (context, index) {
+                return   Container(height: 100 ,
+                  width: 60,
+                  decoration: BoxDecoration(
+                    color: Colors.red,
+                    shape: BoxShape.circle,
+                  ),
+                ) ;
+              },
+              separatorBuilder: (context, index) {
+                return SizedBox(width: 15,);
+              },
+            ),
+
+            chnage hobe :  5 no line a "  Container(height: 100 ,
+                                                           width: 60,
+                                                           decoration: BoxDecoration(
+                                                             color: Colors.red,
+                                                             shape: BoxShape.circle,
+                                                           ),
+                                                         ) ;"
+
